@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Miro Clone Project 🎨
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a Miro clone that allows users to sign in with Google, create organizations, create new boards, use a whiteboard for collaboration, and share with team members live.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features ✨
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Google Sign-In**: Users can sign in using their Google account.
+- **Organization Creation**: Users can create new organizations.
+- **Board Creation**: Within an organization, users can create new boards.
+- **Whiteboard Functionality**: Users can use a whiteboard for drawing, writing, and collaborating.
+- **Live Collaboration**: Team members can collaborate in real-time on the whiteboard.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used 🛠️
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: A React framework for server-side rendering and generating static websites.
+- **Clerk**: For authentication, including Google Sign-In.
+- **Liveblocks**: For real-time collaboration on the whiteboard.
 
-## Learn More
+## Setup Instructions 🚀
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/khushi2706/miro-clone
+    cd miro-clone
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Environment Variables**:
+    Create a `.env.local` file in the root of your project and add the following environment variables:
+    ```env
+    NEXT_PUBLIC_CLERK_FRONTEND_API=<your-clerk-frontend-api>
+    CLERK_API_KEY=<your-clerk-api-key>
+    LIVEBLOCKS_SECRET_KEY=<your-liveblocks-secret-key>
+    ```
 
-## Deploy on Vercel
+4. **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage 📋
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Sign In with Google
+- Navigate to the home page and click on the "Sign in with Google" button.
+- Authenticate using your Google account.
+
+### Create Organization 🏢
+- After signing in, click on the "Create Organization" button.
+- Provide the necessary details for the organization.
+
+### Create New Board 📝
+- Inside your organization, click on the "Create New Board" button.
+- Name your board and start using the whiteboard.
+
+### Use Whiteboard ✏️
+- Use the tools provided to draw, write, and add elements to your whiteboard.
+- All changes are saved and can be seen in real-time by other team members.
+
+### Share with Team Members 👥
+- Invite team members to your organization and board.
+- Collaborate live as changes appear instantaneously for all team members.
+
+## Contributing 🤝
+
+1. Fork the repository.
+2. Create a new branch with your feature or bug fix:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature-name
+    ```
+5. Open a pull request.
+
+
+## Acknowledgements 🙏
+
+- [Next.js](https://nextjs.org/)
+- [Clerk](https://clerk.dev/)
+- [Liveblocks](https://liveblocks.io/)
+
+Feel free to contribute to the project by submitting issues or pull requests. Enjoy collaborating in real-time with your team!
